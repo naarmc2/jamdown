@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Rock Salt";
+  margin: 0;
+}

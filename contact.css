@@ -1,0 +1,104 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* CONTACT FORM */ 
+/* main color scheme #A24502 #CD8A39 #595D2B #1D2A10 #060D08 */
+
+.contact-container{
+  height:90vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly; 
+}
+.contact-left{
+  background-color:#595D2B ;
+  border-radius: 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  padding: 30px;
+  margin-left: 200px;
+  gap: 20px;
+}
+.contact-left-title h2{
+  font-family: "Rock Salt";
+  font-weight: 400px;
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom:5px;
+}
+.contact-left-title hr{
+  border: none;
+  width:120px;
+  height: 5px;
+  background-color: #fff ;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500px;
+  color: #fff;
+  background-color: #f7ca59;
+  border-radius: 50px;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius:20px;
+  margin-bottom: 10px;
+}
+.contact-inputs:focus{
+  border: 2px solid #fff;
+}
+.contact-inputs::placeholder{
+  color: #fff;
+}
+.contact-left button{
+  display:flex;
+  align-items:center;
+  padding:15px 30px;
+  font-size:16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,#ffb647, #7da146);
+  cursor: pointer;
+}
+.contact-right img{
+   width:60%; 
+   height:100%;
+   float:right;
+   margin-right:200px;
+   text-align:inherit;
+}
+.contact-right ul{
+  margin-top: 250px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  font-size: large;
+  color:#1D2A10;
+}
+/* styles for mobile and tablets */
+@media (max-width: 800px){
+  .contact-inputs{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
+  }
+}
+
+
+
+

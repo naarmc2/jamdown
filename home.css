@@ -1,0 +1,360 @@
+/* affects all of the html file or atleast should... putting a background image or color doesnt work. something may be overriding it*/
+* {
+  box-sizing: border-box;
+  font-family: "Gluten";
+}
+
+body{
+  background-color:#fff;
+  overflow-x:hidden;
+  min-height: 100%;
+}
+
+/* NAVIGATION BAR */
+
+/* color scheme #A24502 #CD8A39 #595D2B #1D2A10 #060D08 */
+/* creates the green border enclosing the nav bar*/
+.divider {
+  background-color: #595D2B;
+  color: white; 
+  border: none;
+  margin-right:auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  border-radius: 2px;
+  vertical-align: top;
+}
+
+/* this is the text size of nav bar and all other links*/
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+/* HEADER (used for navbar ) */
+header {
+  /* changing this to fixed makes it stick but poorly*/
+  position: relative;
+  padding: 0 2rem;
+}
+.navbar{
+  width: 100%;
+  height:30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+/* this works to keep nav bar from having dots*/
+.navbar li{
+  cursor:pointer;
+  list-style:none;
+}
+.navbar li :hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+/* Not Working. use to keep the navbar present at all times*/
+.navbar .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* replace will a self-drawn logo image*/
+.navbar .logo a {
+  font-family: "Rock Salt";
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffb151;
+}
+
+.navbar .links {
+  padding-top: 20px;
+  display:flex;
+  gap: 4rem;
+  color: #ffb151;
+}
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor:pointer;
+  display:none; 
+}
+
+/* this is for the forum button */
+.action_btn{
+  background-color:#1D2A10;
+  color:#ffb337;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-decoration:none;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ;
+}
+.action_btn:hover {
+  scale: 1.05;
+  color: #ffb337;
+}
+.action_btn:active{
+  scale:0.95;
+}
+
+/* drop down bar for culture navbar link*/
+.menu{
+  color: white;
+  padding: 16px;
+  border: none;
+}
+.dropdown{
+  position:relative;
+  display: inline-block;
+}
+.menucontent{
+  display: none;
+  position: absolute;
+  background-color:#1D2A10;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 10px
+}
+.link,.link-hide{
+  display: inline-block;
+  color: #f6b44a;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.link-hide{
+  display: block;
+}
+.link{
+  display: inline-block;
+}
+.link-hide:hover,.link:hover{
+  background-color: beige;
+  color: black;
+}
+
+.dropdown:hover .menucontent{
+  display:block;
+  box-shadow: 2px 2px 2px black;
+}
+
+/* IMAGE SLIDER */
+.container {
+  max-width: 1200px;
+  width: 95%;
+  padding-bottom: 175px;
+}
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button{
+  position: absolute; 
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  background:#ffb337;
+  font-size: 2.2 rem;
+  justify-content: center;
+  align-items:center;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover{
+  background: #444;
+}
+.slider-wrapper .slide-button#prev-slide{
+  left: -25px;
+  display:none;
+}
+.slider-wrapper .slide-button#next-slide{
+  right: -25px;
+}
+.slider-wrapper .image-list {
+  display:grid;
+  gap: 18px;
+  font-size: 0;
+  list-style:none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10,1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image.list .image-item{
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+.container .slider-scrollbar{
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items:center;
+}
+.slider-scrollbar .scrollbar-track{
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  display:flex;
+  align-items: center;
+  position:relative;
+  border-radius: 4px;
+}
+.slider-scrollbar:hover .scrollbar-track{
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb{
+  position: absolute;
+  top:0;
+  bottom:0;
+  height: 100%;
+  width: 50%;
+  background: #1D2A10;
+  border-radius: inherit;
+  cursor: grab;
+}
+.slider-scrollbar .scrollbar-:active{
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+/* styles for mobile and tablets */
+@media only screen and (max-width:1023px){
+  .slider-wrapper .slide-button {
+    display: none important;
+  }
+  .slider-wrapper image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  } 
+  .slider-wrapper .image-list .image-item {
+    width: 280px; 
+    height: 380px;
+  } 
+}
+
+
+/* HERO */
+/* contains the greeting statement*/
+section#hero{
+  margin-top: 0px;
+  height:fit-content;
+  height: calc(33vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  color: #fff;
+}
+#hero h1{
+  font-family:"Rock Salt";
+  font-size:  4.0rem;
+  margin-bottom: 1rem;
+}
+
+/* button that goes below the image slider */
+.welcome_button{ 
+  font-family: "Gluten";
+  background-color: #595D2B;
+  border-color:white;
+  border-style:solid;
+  border-width: 3px;
+  border-radius: 30px;         
+  height: 60px;
+  width: 200px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 560%);
+  color: #ffb337;
+  transition: background-color 0.15s,
+  color 0.5s;
+}
+.welcome_button:hover {
+  background-color: #1D2A10;
+  color:#c5d233;
+}
+
+.container2 {
+  border:none;
+  border-color: #595D2B;
+  background: linear-gradient(270deg,#1D2A10,#ffb647, #7da146);
+  background-color: #060D08;
+  width: 100%;
+  height: 750px; 
+  padding:20px
+}
+
+.container2 h2{
+  font-family: "Rock Salt";
+  color: #BABD8E;
+  text-align: center; 
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.container2 ul{
+  color: #BABD8E;
+}
+.container2 img{
+  border:none;
+  border-radius: 10px; 
+  width:200px; 
+  height: 207px; 
+  object-fit:fill;
+  margin:10px
+}
+
+/* activate footer later*/
+footer{
+  margin-top: 100px;
+  height: 475px;
+  background-color: rgb(248, 255, 237);
+  overflow-y:auto;
+}
+
+footer img{
+  float:left;
+  margin-top: 100px;
+
+
+}
