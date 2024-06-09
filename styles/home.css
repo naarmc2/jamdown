@@ -57,8 +57,8 @@ header {
   text-decoration: underline;
 }
 /* Not Working. use to keep the navbar present at all times*/
-.sticky {
-  position: sticky;
+.navbar .sticky {
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -155,9 +155,8 @@ header {
   padding-bottom: 175px;
 }
 .slider-wrapper {
-  position: static;
+  position: relative;
 }
-
 .slider-wrapper .slide-button{
   position: absolute; 
   top: 50%;
@@ -181,14 +180,11 @@ header {
   background: #444;
 }
 .slider-wrapper .slide-button#prev-slide{
-  left: 55px;
-  top:475px;
+  left: -25px;
   display:none;
 }
 .slider-wrapper .slide-button#next-slide{
-  right: 55px;
-  top:475px;
-
+  right: -25px;
 }
 .slider-wrapper .image-list {
   display:grid;
@@ -318,7 +314,6 @@ section#hero{
 
 .container2 {
   border:none;
-  display: flex;
   border-color: #595D2B;
   background: linear-gradient(270deg,#1D2A10,#ffb647, #7da146);
   background-color: #060D08;

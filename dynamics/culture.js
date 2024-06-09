@@ -1,5 +1,8 @@
- async function getUser(place) {
-  const api_url = `https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=Kingston,Jamaica`
+//https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=Kingston,%20%20Jamaica
+// At present, it doesn't work to get the time zone but thats fine since all of Jamaica has one time zone
+
+async function getUser(place) {
+  const api_url = `https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=${place}`
           
             const response = await fetch(api_url);
             
