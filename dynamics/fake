@@ -1,0 +1,34 @@
+//https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=Kingston,%20%20Jamaica
+
+//https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=Kingston,%20%20Jamaica
+
+async function getData(place){
+  const url=`https://timezone.abstractapi.com/v1/current_time/?api_key=d93c2f99877849c7bca36a6a37fdf121&location=Kingston,%20Jamaica`
+
+  const res=await fetch(url)
+  data =await res.json()
+  time=data.datetime
+
+  document.getElementById("time").innerText=` ${place}'s time = ${time} ${data.timezone_abbreviation} `
+}
+
+document.querySelectorAll(".allPaths").forEach(e=>{
+  e.addEventListener("mouseover",function(){
+    window.onmousemove=function(j){
+      x=j.clientX
+      y=j.clientY
+      document.getElementById("parish").style.top=y-20+"px"
+      document.getElementById("parish").style.left=x-20+"px"
+    }
+
+    e.style.fill="gold"
+    document.getElementById("parishp").innerText=e.id
+    document.getElementById("parish").style.opacity=1
+
+
+  })
+  e.addEventListener("mouseleave",function(){
+    e.style.fill="#ececec"
+    document.getElementById("name").style.opacity=0
+  })
+})

@@ -57,8 +57,8 @@ header {
   text-decoration: underline;
 }
 /* Not Working. use to keep the navbar present at all times*/
-.navbar .sticky {
-  position: fixed;
+.sticky {
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -155,8 +155,9 @@ header {
   padding-bottom: 175px;
 }
 .slider-wrapper {
-  position: relative;
+  position: static;
 }
+
 .slider-wrapper .slide-button{
   position: absolute; 
   top: 50%;
@@ -180,11 +181,14 @@ header {
   background: #444;
 }
 .slider-wrapper .slide-button#prev-slide{
-  left: -25px;
+  left: 55px;
+  top:475px;
   display:none;
 }
 .slider-wrapper .slide-button#next-slide{
-  right: -25px;
+  right: 55px;
+  top:475px;
+
 }
 .slider-wrapper .image-list {
   display:grid;
