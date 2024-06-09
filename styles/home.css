@@ -314,6 +314,7 @@ section#hero{
 
 .container2 {
   border:none;
+  display: flex;
   border-color: #595D2B;
   background: linear-gradient(270deg,#1D2A10,#ffb647, #7da146);
   background-color: #060D08;

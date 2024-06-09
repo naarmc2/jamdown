@@ -96,6 +96,12 @@
   margin-left: 150px;
 
 }
+
+/* allows for social media icon color to only appear over hover */
+.wrapper a{
+  color:unset;
+}
+
 .wrapper .button .icon{
   font-size: 20px;
 }
