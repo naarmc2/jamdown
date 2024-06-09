@@ -5,7 +5,6 @@
 }
 
 body{
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -13,8 +12,8 @@ h1{
   letter-spacing: 4px;
   padding-top:40px;
   color:#ffb151;
-
 }
+
 
 /* color scheme #A24502 #CD8A39 #595D2B #1D2A10 #060D08 */
 /*  # parish targets the html element with the parish id */ 
@@ -26,7 +25,7 @@ h1{
   border-radius:10px;
   border: 3px solid #ffb151;
   padding: 5px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 
@@ -45,8 +44,10 @@ h1{
 /* #315e03 #ef9b34 #060D08*/
 
 svg{
-  margin-top: 50px;
+  padding: 50px;
+  margin-bottom:20px;
 }
+
 svg path{
   fill:#315e03;
   stroke: #eee;
@@ -57,4 +58,22 @@ svg path:hover{
   fill: #060D08;
   transition: 0.6s;
   cursor:pointer;
+}
+
+.container{
+  display:flex;
+}
+
+.box-1{
+  height:400px;
+  width:50%;
+  background-color: #ffb151;
+  float:left
+}
+
+.box-2{
+  height:400px;
+  width:50%;
+  background-color: #315e03;
+  float:right
 }
