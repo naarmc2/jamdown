@@ -6,11 +6,13 @@
 
 body{
   overflow-x: hidden;
+  font-family:"Amatic SC"
 }
 
 h1{
-  letter-spacing: 4px;
-  padding-top:40px;
+  letter-spacing: 3px;
+  padding-top:80px;
+  padding-bottom:40px;
   color:#ffb151;
 }
 
@@ -23,7 +25,7 @@ h1{
   width: fit-content;
   opacity:0;
   border-radius:10px;
-  border: 3px solid #ffb151;
+  border: 3px solid #194325;
   padding: 5px;
   font-size: 1.2rem;
 }
@@ -44,8 +46,8 @@ h1{
 /* #315e03 #ef9b34 #060D08*/
 
 svg{
-  padding: 50px;
-  margin-bottom:20px;
+  padding: 25px;
+  margin-bottom:50px;
 }
 
 svg path{
@@ -65,15 +67,37 @@ svg path:hover{
 }
 
 .box-1{
-  height:400px;
+  height:710px;
   width:50%;
   background-color: #ffb151;
   float:left
 }
 
 .box-2{
-  height:400px;
+  height:710px;
   width:50%;
-  background-color: #315e03;
+  background-color: #595D2B;
   float:right
+}
+
+h2{
+  text-align: center;
+}
+
+img{
+  width: 100%; /* Set width to container width */
+  height: 710px; /* Let height adjust proportionally */
+  object-fit: cover; /* Resize to cover container while maintaining aspect ratio*/
+}
+
+h3 {
+  padding:20px;
+  letter-spacing: 10px;
+  text-align: center;
+  color:#86ab49;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }

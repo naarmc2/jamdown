@@ -50,3 +50,25 @@ async function getUser(place) {
     //         e.style.fill = "red"
     //     })
     // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

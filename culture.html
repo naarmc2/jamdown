@@ -8,6 +8,7 @@
   <link rel = "icon" type = "image/png" href = "images/FaviconAckee.png">   <!-- the image displayed beside title-->
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/culture.css">
+  
 
 <!--SCRIPT-->
  <script src="dynamics/culture.js" defer></script>
@@ -26,6 +27,12 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
   crossorigin="anonymous"> </script>
+
+  <!--SWIPER-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <title> Jamdown </title>
 </head>
@@ -66,7 +73,25 @@
  </div>
  -->
 
-  <h1> Map of Jamaica</h1>
+  <h1> 
+      <span style="color:#315e03"> M </span >  
+      <span style="color:#ef9b34"> A </span > 
+      <span style="color:#060D08"> P &nbsp; </span >
+      <span style="color:#315e03"> O </span >  
+      <span style="color:#ef9b34"> F &nbsp; </span > 
+      <span style="color:#060D08"> J </span > 
+      <span style="color:#315e03"> A</span >  
+      <span style="color:#ef9b34"> M </span >
+      <span style="color:#315e03"> A </span >  
+      <span style="color:#ef9b34"> I </span > 
+      <span style="color:#060D08"> C </span >
+      <span style="color:#ef9b34"> A </span > 
+  </h1>
+  <h2> 
+    <span style="color:#315e03"> Fourteen </span >
+      <span style="color:#ef9b34"> Parishes </span >
+  </h2>
+<p> <i> 2,824,784</i> Jamaicans pon one likkle island? Is <a href="#carousel" style="text-decoration: none; color:black;"> <u>where</u> </a> all a dem live? </p>
 
     <svg baseprofile="tiny" fill="#6f9c76" height="395" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="0 0 1000 395" width="1000" id="svg180"
        sodipodi:docname="jamaicaSvg.svg" inkscape:version="1.2.2 (b0a8486, 2022-12-01)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -223,47 +248,50 @@
            id="circle177" />
       </g>
     </svg>
-  </section>
-  <div class="containerC">
-    <div class="box-1" >
+  </section> 
 
+<!-- Slider main container -->
+  <div>
+    <div class="box-1">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1600">
+            <img src="images/kingston.png" class="d-block w-100" alt="Kingston">
+          </div>
+          <div class="carousel-item" data-bs-interval="1600">
+            <img src="images/montegoBay.png" class="d-block w-100" alt="Montego Bay">
+          </div>
+          <div class="carousel-item" data-bs-interval="1600">
+            <img src="images/trelawny.jpeg" class="d-block w-100" alt="Trelawny">
+          </div>
+          <div class="carousel-item" data-bs-interval="1600">
+            <img src="images/manchesterHighway.png" class="d-block w-100" alt="Manchester">
+          </div>
+          <div class="carousel-item" data-bs-interval="1600">
+            <img src="images/westmoreland.jpeg" class="d-block w-100" alt="Westmoreland">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    <div class="box-2">
+    <div class="box-2 ">
+      <h3> Kingston </h3>
+      <p  id="carousel">
+      </p> 
+      Kingston is
+      
 
+      
     </div>
+
   </div>
-
- 
-
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-
-
- 
-
- 
-
-
 
 </body>
     
