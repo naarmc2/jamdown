@@ -84,20 +84,31 @@ h2{
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
 img{
   width: 100%; /* Set width to container width */
   height: 710px; /* Let height adjust proportionally */
   object-fit: cover; /* Resize to cover container while maintaining aspect ratio*/
 }
 
-h3 {
-  padding:20px;
+.box-2 h3 {
   letter-spacing: 10px;
   text-align: center;
+  font-size:40px;
   color:#86ab49;
+  padding:70px;
+
 }
-a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+
+
+.box-2 p{
+  color:#d1e9b9;
+  font-size:20px;
+  line-height: 40px;
+  padding-left: 24px;
 }
