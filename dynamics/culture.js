@@ -53,7 +53,11 @@ async function getUser(place) {
 
 
 
+    //const myCarousel = document.getElementById('myCarousel')
 
+    //myCarousel.addEventListener('slide.bs.carousel', event => {
+        //scrollContainer.scrollBy({ left: 100, behavior: 'smooth' }); // Scroll horizontally by 100px smoothly
+    //})
 
 
 
