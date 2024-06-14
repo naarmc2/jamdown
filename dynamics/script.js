@@ -88,3 +88,26 @@
    })
 
 
+
+//Symbols Jump Highlighter
+const targetDiv = document.getElementById('symbols'); // Replace with your div's ID
+const anchorTags = targetDiv.querySelectorAll('a');
+
+for (const anchor of anchorTags) {
+  anchor.addEventListener('click', function(event) {
+    const href = anchor.href;
+
+    if (href.indexOf('#') !== -1) { // Check if href contains a # symbol
+      const targetElementId = href.split('#')[1]; // Extract the ID after the #
+      const targetElement = document.getElementById(targetElementId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement.classList.toggle('highlight-active');
+      }
+    }
+  });
+}
+
+
+

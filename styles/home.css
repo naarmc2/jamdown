@@ -37,8 +37,13 @@ a {
 header {
   /* changing this to fixed makes it stick but poorly*/
   position: relative;
+  left:0;
+  top: 0;
+  border-bottom: 1px solid hsla(0,0%,100%,0.2);
   padding: 0 2rem;
+  z-index:10;
 }
+
 .navbar{
   width: 100%;
   height:30px;
@@ -118,6 +123,21 @@ header {
   position:relative;
   display: inline-block;
 }
+
+.menu i{
+  font-size:15px;
+  pointer-events:none;
+  user-select: none;
+  position: absolute;
+  top: calc(50%-5px);
+}
+
+.menu >ul >div> i{
+  right:0;
+}
+
+
+/*this is the background of the words Jamaica a Yard, jamaica aborad*/ 
 .menucontent{
   display: none;
   position: absolute;
@@ -148,6 +168,48 @@ header {
   display:block;
   box-shadow: 2px 2px 2px black;
 }
+
+
+.dropdown .sub-menu{
+  position: absolute;
+  top:100%;
+  left:0;
+  width:230px;
+  padding:15px;
+  background-color: #595D2B;
+  box-shadow: 0 0 5px hsla(0,0%,0%,0.5);
+  z-index:1;
+}
+
+.dropdown .sub-menu a{
+  padding: 6px 24px;
+}
+
+.dropdown .sub-menu .menucontent > a{
+  padding-right: 34px;
+}
+
+.sub-menu .dropdown span{
+  background-image: red;
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.5s ease;
+}
+
+.sub-menu-right{
+  left:100%;
+  top:0;
+}
+
+
+.dropdown .sub-menu i{
+  transform: rotate(-90deg);
+  right:24px;
+}
+
+
+
 
 /* IMAGE SLIDER */
 .container {
@@ -201,11 +263,13 @@ header {
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
+
 .slider-wrapper .image.list .image-item{
   width: 325px;
   height: 400px;
   object-fit: cover;
 }
+
 .container .slider-scrollbar{
   height: 24px;
   width: 100%;
@@ -317,7 +381,7 @@ section#hero{
 .container2 {
   border:none;
   border-color: #595D2B;
-  background: linear-gradient(270deg,#1D2A10,#ffb647, #7da146);
+  background: linear-gradient(270deg,#1D2A10, #7da146);
   background-color: #060D08;
   width: 100%;
   height: 750px; 
@@ -332,7 +396,6 @@ section#hero{
   padding-top: 40px;
   font-size: 30px;
   font-weight: bolder;
-  text-decoration: underline;
 }
 
 .container2 ul{
@@ -372,6 +435,7 @@ footer .row{
 footer .col{
   flex-basis: 5%;
   padding-left:50px;
+  text-decoration: none;
 }
 
 footer .col:nth-child(2), .col:ntn-child(3){
@@ -535,4 +599,14 @@ hr{
   .col:ntn-child(2), .col:ntn-child(3){
     flex-basis: 100%;
   }
+}
+
+.container2 a{
+  text-decoration: none;
+}
+
+.highlight-active {
+  padding:4px;
+  background-color: #fbc17a; /* Change to your desired highlight color */
+  color: black; /* Optional: Change text color for better contrast */
 }
