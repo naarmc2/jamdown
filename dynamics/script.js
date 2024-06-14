@@ -72,11 +72,18 @@
 //FOOTER
    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2ENiuI4yWsjCWBQyjKFZSvopw4ar9x012M0XFAsylvL31RwJRCxP8eYJzl3ZRRWlz/exec'
    const form = document.forms['submit-to-google-sheet']
-   
-   form.addEventListener('submit', e => {
+   const msg = document.getElementById("msg")
+
+   form.addEventListener('email', e => {
      e.preventDefault()
      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-       .then(response => console.log('Success!', response))
+       .then(response =>{
+          msg.innerHTML = "Thank You For Subscribing"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 8000)
+          form.reset()
+       })
        .catch(error => console.error('Error!', error.message))
    })
 
