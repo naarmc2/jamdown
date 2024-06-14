@@ -263,13 +263,11 @@ header {
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
-
 .slider-wrapper .image.list .image-item{
   width: 325px;
   height: 400px;
   object-fit: cover;
 }
-
 .container .slider-scrollbar{
   height: 24px;
   width: 100%;
