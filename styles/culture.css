@@ -80,35 +80,42 @@ svg path:hover{
   float:right
 }
 
-h2{
+section h2{
   text-align: center;
 }
 
-a {
+section a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
 }
 
-img{
+section img{
   width: 100%; /* Set width to container width */
   height: 710px; /* Let height adjust proportionally */
   object-fit: cover; /* Resize to cover container while maintaining aspect ratio*/
 }
 
+.box-1 img{
+  width: 100%; /* Set width to container width */
+  height: 710px; /* Let height adjust proportionally */
+  object-fit: cover; /* Resize to cover container while maintaining aspect ratio*/
+}
 .box-2 h3 {
   letter-spacing: 10px;
   text-align: center;
   font-size:40px;
   color:#86ab49;
   padding:70px;
+  padding-bottom:25px;
 
 }
 
 
 .box-2 p{
   color:#d1e9b9;
-  font-size:20px;
+  font-size:18px;
   line-height: 40px;
-  padding-left: 24px;
+  padding-left: 40px;
+  padding-right:40px;
 }
