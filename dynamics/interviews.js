@@ -27,3 +27,26 @@ var swiper = new Swiper(".slide-content", {
       },
   },
 });
+
+
+
+//
+const openModalButton = document.getElementById('open-modal-btn');
+const modal = document.getElementById('my-modal');
+const closeModalButton = document.getElementById('close-modal-btn');
+
+// Function to show the modal
+function openModal() {
+  modal.style.display = 'block'; // Change display to block to show the modal
+}
+
+// Function to close the modal (optional, triggered by close button)
+function closeModal() {
+  modal.style.display = 'none'; // Change display back to none to hide the modal
+}
+
+// Add click event listener to the open modal button
+openModalButton.addEventListener('click', openModal);
+
+// Optional: Add click event listener to the close button (if present)
+closeModalButton.addEventListener('click', closeModal);

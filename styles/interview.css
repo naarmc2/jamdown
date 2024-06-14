@@ -6,7 +6,9 @@
 .slide-container{
   max-width: 1120px;
   width: 100%;
-  padding: 40px 0;
+  padding: 80px 0;
+  transform: translate(15%, 10%);
+
 }
 .slide-content{
   margin: 0 40px;
@@ -124,4 +126,24 @@
   .swiper-navBtn{
     display: none;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; /* Stretches the modal to fill the entire viewport width */
+  height: 100%; /* Stretches the modal to fill the entire viewport height */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  z-index: 10; /* Ensures the modal stays above other elements */
+}
+
+.modal-content {
+  background-color: white; /* Background color for the modal content */
+  margin: 15% auto; /* Positions the content in the center of the modal */
+  padding: 20px; /* Padding for the content */
+  border: 1px solid #ccc; /* Optional: Border around the content */
+  border-radius: 5px; /* Optional: Rounded corners for the content area */
+  width: 50%; /* Adjust width as needed */
 }
