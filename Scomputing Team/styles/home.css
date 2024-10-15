@@ -1,0 +1,99 @@
+.hero{
+  display: flex;
+  flex-direction: row;
+  padding-top:40px;
+  gap:4em;
+  justify-content: center;
+
+}
+
+.heroText{
+    text-align:left;
+    font-size: larger;
+    margin-left: 4em;   
+}
+
+
+.heroText h1{
+  text-align:center;
+  letter-spacing: 3px;
+}
+
+.heroText p{
+    margin-left:2em;
+    
+}
+
+
+
+.images{
+  float: right;
+}
+
+.container {
+
+  display: grid;
+  width: 95vh;
+  grid-template-columns: repeat(4,2fr);
+  grid-template-rows: repeat(2,2fr);
+  grid-gap: 1em 3em;
+  padding:20px;
+  margin-left:20px;
+}
+
+
+.child{
+  width:100%;
+  height:max-content;
+  border-radius: 10px;
+  background-color: var(--cream);
+  padding:15px;
+}
+
+.child img{
+  width:100%;
+  border-radius: 20px;
+}
+.child-1{
+  grid-area: 1 / 1 / 1 / 3;
+  height:67%;
+  background-color: var(--yellow);
+}
+
+.child-2{
+  grid-area: 1 / 3 / 1 / 5;
+}
+
+.child-3{
+  /* row start col-start row-end col-end*/ 
+  grid-area: 2 / 1 / 4 / 3;
+}
+
+.child-4{
+  grid-area: 2 / 3 / 4 / 5;
+}
+/*
+
+transition: transform 0.2s ease-in-out;
+animation-duration: 6s;
+animation-name: change-color;
+animation-iteration-count:infinite;
+animation-duration: alternate;
+
+  @keyframes change-color{
+    from {
+      background:red;
+    }
+  
+    to{ 
+      background:blue;
+    }
+
+}
+*/ 
+
+
+
+
+
+

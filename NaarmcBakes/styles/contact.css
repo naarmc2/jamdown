@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    background: beige;
+}
+
+.container {
+    width: 800px;
+    height:max-content;
+    background-color: lightcoral;
+    font-size: 30px;
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    
+}
+
+
+.child  {
+    width: 200px;
+    height:100px;
+    color:white;
+    background: lightblue;
+    transition: transform 0.2s ease-in-out;
+    animation-duration: 6s;
+    animation-name: change-color;
+    animation-iteration-count:infinite;
+    animation-duration: alternate;
+  }
+
+  .child  img:hover{
+    transform: rotate(45deg);
+  }
+  
+  @keyframes change-color{
+    from {
+      background:red;
+    }
+  
+    to{ 
+      background:blue;
+    }
+
+}

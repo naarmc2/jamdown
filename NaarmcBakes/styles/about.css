@@ -1,0 +1,38 @@
+.aboutBox{
+  display: flex;
+  flex-direction: row;
+  padding:100px;
+  justify-content: center;
+  border: 4px  solid;
+
+  margin:10vh;
+
+}
+
+.aboutItem{
+  padding:5px;
+
+
+}
+
+.aboutItem img{
+  transition: transform 0.2s ease-in-out;
+  animation-duration: 6s;
+  animation-name: change-color;
+  animation-iteration-count:infinite;
+  animation-duration: alternate;
+}
+.aboutItem img:hover{
+  
+  transform: rotate(45deg);
+}
+
+@keyframes change-color{
+  from {
+    background:red;
+  }
+
+  to{ 
+    background:blue;
+  }
+}
